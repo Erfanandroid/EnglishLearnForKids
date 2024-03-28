@@ -1,4 +1,4 @@
-package com.example.englishlearnforkids;
+package com.example.englishLearnForKids;
 
 import android.app.Application;
 
@@ -11,4 +11,5 @@ public class application extends Application{
     public void onCreate() {
         super.onCreate();
     }
+
 }

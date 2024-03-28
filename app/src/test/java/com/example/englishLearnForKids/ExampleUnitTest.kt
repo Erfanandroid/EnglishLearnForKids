@@ -1,4 +1,4 @@
-package com.example.englishlearnforkids
+package com.example.englishLearnForKids
 
 import org.junit.Test
 

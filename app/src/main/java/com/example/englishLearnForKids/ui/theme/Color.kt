@@ -1,4 +1,4 @@
-package com.example.englishlearnforkids.ui.theme
+package com.example.englishLearnForKids.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

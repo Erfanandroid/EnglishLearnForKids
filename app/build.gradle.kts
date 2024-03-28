@@ -80,6 +80,11 @@ dependencies {
     ksp(libs.dagger.compiler)
     ksp(libs.hilt.android.compiler.v2481)
 
+    // Dagger - Hilt
+    implementation (libs.hilt.android)
+    ksp (libs.androidx.hilt.compiler)
+
+
     //navigation
 
     implementation (libs.androidx.navigation.compose)
