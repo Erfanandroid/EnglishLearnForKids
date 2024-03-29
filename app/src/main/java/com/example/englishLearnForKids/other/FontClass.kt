@@ -49,4 +49,27 @@ class FontClass {
         Font(R.font.vorujak, FontWeight.ExtraBold)
     )
 
+    val abeezee = FontFamily(
+        Font(R.font.abeezee, FontWeight.Normal),
+        Font(R.font.abeezee, FontWeight.Light),
+        Font(R.font.abeezee, FontWeight.SemiBold),
+        Font(R.font.abeezee, FontWeight.ExtraBold)
+    )
+
+    val chicle = FontFamily(
+        Font(R.font.chicle, FontWeight.Normal),
+        Font(R.font.chicle, FontWeight.Light),
+        Font(R.font.chicle, FontWeight.SemiBold),
+        Font(R.font.chicle, FontWeight.ExtraBold)
+    )
+
+    val cronus = FontFamily(
+        Font(R.font.cronus, FontWeight.Normal),
+        Font(R.font.cronus, FontWeight.Light),
+        Font(R.font.cronus, FontWeight.SemiBold),
+        Font(R.font.cronus, FontWeight.ExtraBold)
+    )
+
+
+
 }
