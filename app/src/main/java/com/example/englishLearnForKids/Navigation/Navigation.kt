@@ -5,11 +5,13 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.englishLearnForKids.ui.ColumnWithButton
 import com.example.englishLearnForKids.ui.EntryView
 import com.example.englishLearnForKids.ui.MainList
 
 
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Navigation(){
     val navController= rememberNavController()
@@ -21,7 +23,11 @@ fun Navigation(){
         }
 
         composable(route="MainList"){
-            MainList()
+            MainList(navController)
+        }
+
+        composable(route = "test"){
+            ColumnWithButton()
         }
 
     }
