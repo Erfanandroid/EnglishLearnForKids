@@ -1,5 +1,11 @@
 package com.example.englishLearnForKids.ui
 
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.core.Easing
+import androidx.compose.animation.core.animateDpAsState
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.spring
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -35,6 +41,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.blur
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
@@ -61,6 +68,10 @@ fun MainList(navController: NavController){
     var showDialog by remember {
         mutableStateOf(false)
     }
+
+
+
+
 
 
 
@@ -255,7 +266,15 @@ fun MainList(navController: NavController){
                 ),
 
 
-                modifier = Modifier.clip(shape = RoundedCornerShape(20.dp) )) {
+                modifier = Modifier
+                    .animateContentSize(
+                        animationSpec = spring(
+                            dampingRatio = 100f,
+                            stiffness = 10f
+                        )
+                    )
+                    .clip(shape = RoundedCornerShape(20.dp)))
+            {
 
 
                 Box(
@@ -263,6 +282,9 @@ fun MainList(navController: NavController){
                         .height(500.dp)
                         .width(350.dp)
                 ){
+
+                    
+
                     Column(
                         modifier = Modifier
                             .padding(top = 20.dp, start = 30.dp)

@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
 
             setContent {
                 EnglishLearnForKidsTheme {
-                    Navigation()
+                    Navigation(this)
                 }
 
             }
