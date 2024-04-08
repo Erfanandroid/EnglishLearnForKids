@@ -119,5 +119,7 @@ dependencies {
     implementation (libs.glide)
     ksp (libs.glide.compiler)
 
+    implementation ("androidx.compose.material3:material3-window-size-class:1.2.1")
+
 
 }

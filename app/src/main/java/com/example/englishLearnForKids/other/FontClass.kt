@@ -70,6 +70,26 @@ class FontClass {
         Font(R.font.cronus, FontWeight.ExtraBold)
     )
 
+    val roboto = FontFamily(
+        Font(R.font.roboto_medium, FontWeight.Normal),
+        Font(R.font.roboto_medium, FontWeight.Light),
+        Font(R.font.roboto_medium, FontWeight.SemiBold),
+        Font(R.font.roboto_medium, FontWeight.ExtraBold)
+    )
+
+    val inter = FontFamily(
+        Font(R.font.inter_medium, FontWeight.Normal),
+        Font(R.font.inter_medium, FontWeight.Light),
+        Font(R.font.inter_medium, FontWeight.SemiBold),
+        Font(R.font.inter_medium, FontWeight.ExtraBold)
+    )
+
+    val rubik = FontFamily(
+        Font(R.font.rubik_bold, FontWeight.Normal),
+        Font(R.font.rubik_bold, FontWeight.Light),
+        Font(R.font.rubik_bold, FontWeight.SemiBold),
+        Font(R.font.rubik_bold, FontWeight.ExtraBold)
+    )
 
 
 }
